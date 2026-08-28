@@ -1,4 +1,4 @@
-# 📚 React Frontend Scholarship — Shared Assignments
+# 📚 DEPI React — Technical Assignments
 
 مساحة مشتركة نرفع فيها كلنا حلول تاسكات كل سيشن، عشان نقدر نشوف حل بعض ونقارن طرق التفكير المختلفة لنفس المسألة.
 
