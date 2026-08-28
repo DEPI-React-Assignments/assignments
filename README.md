@@ -14,7 +14,6 @@ TECH-D02/
 ```
 
 **Rules:**
-- Session numbers are zero-padded: `TECH-D01`, not `TECH-D1` — this keeps sessions sorted correctly once we pass session 9.
 - Your subfolder name must match your exact GitHub username.
 - Only add or edit files inside your own subfolder.
 
@@ -42,4 +41,3 @@ Use the **Discussions** tab instead of other group chats — open a new discussi
 
 - Don't edit files inside someone else's folder.
 - `node_modules` is already excluded via `.gitignore` — no need to upload it.
-- Questions about the repo itself → ask [team lead's name / contact].
