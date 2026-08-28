@@ -1,43 +1,150 @@
-# React Frontend Scholarship — Shared Assignments
+# 📚 React Frontend Scholarship — Shared Assignments
 
-This repo is where everyone in the group uploads their session assignments, so we can all see each other's solutions, compare approaches, and discuss different ways of solving the same problem.
+مساحة مشتركة نرفع فيها كلنا حلول تاسكات كل سيشن، عشان نقدر نشوف حل بعض ونقارن طرق التفكير المختلفة لنفس المسألة.
 
-## Folder structure
+---
 
-Each session gets its own folder. Inside it, everyone has a subfolder named after their GitHub username:
+## 📖 المحتوى
+
+- [هيكل الفولدرات](#-هيكل-الفولدرات)
+- [طريقة رفع الأسينمنت](#-طريقة-رفع-الأسينمنت)
+- [الأوامر المهمة](#-الأوامر-المهمة)
+- [النقاش على الحلول](#-النقاش-على-الحلول)
+- [مشاكل متوقعة وحلولها](#-مشاكل-متوقعة-وحلولها)
+- [قواعد عامة](#-قواعد-عامة)
+
+---
+
+## 📂 هيكل الفولدرات
+
+كل سيشن ليها فولدر خاص بيها باسم `TECH-D[رقم السيشن]`، وجوه كل فولدر سيشن، كل واحد فينا ليه فولدر فرعي باسم يميّزه عن زمايله:
 
 ```
 TECH-D01/
-  <your-github-username>/
+  Abomaher/
+  Ahmed-Ehab/
+  Elhosiny/
+  Maro/
 TECH-D02/
-  <your-github-username>/
+  Abomaher/
+  Ahmed-Ehab/
+  Elhosiny/
+  Maro/
+TECH-D11/
+  Abomaher/
+  Elhosiny/
 ```
 
-**Rules:**
-- Your subfolder name must match your exact GitHub username.
-- Only add or edit files inside your own subfolder.
+> ⚠️ **مهم:** مش شرط يكون الـ GitHub username بالظبط، المهم إن الاسم يكون **فريد ومفيش تعارض** مع زميل تاني، وإنك **تفضل ثابت على نفس الاسم في كل السيشنز** (عشان بعدين لما حد يفتح سيشن تاني يعرف يلاقي حل نفس الشخص بسهولة).
 
-## How to submit an assignment
+---
 
-**First time only:**
+## 📤 طريقة رفع الأسينمنت
+
+### أول مرة بس (Setup)
+
 ```bash
-git clone <repo-url>
+git clone https://github.com/DEPI-React-Assignments/assignments.git
+cd assignments
 ```
 
-**Every session after that:**
+### كل سيشن جديدة (الخطوات المتكررة)
+
 ```bash
+# 1. اسحب آخر تحديثات زمايلك الأول
 git pull
-# create your folder if it doesn't exist yet, e.g. TECH-D11/<your-username>/
+
+# 2. اعمل فولدرك جوه فولدر السيشن لو أول مرة تسلّم فيها
+#    مثال: TECH-D11/Abomaher/
+mkdir Abomaher
+
+# 3. حط حلولك جوه فولدرك، وبعدين:
 git add .
-git commit -m "TECH-D11 - <your name>"
+git commit -m "TECH-D11 - Abomaher"
 git push
 ```
 
-## Want to discuss a solution?
+**⚠️ اوعى تنسى:** اعمل `git pull` **قبل** أي `git push` دايمًا. ده بيمنع 90% من المشاكل اللي ممكن تقابلك.
 
-Use the **Discussions** tab instead of other group chats — open a new discussion, link the file or folder you're talking about, and tag whoever you're responding to. This keeps the conversation attached to the actual code instead of scattered across chat apps.
+---
 
-## A few notes
+## ⚙️ الأوامر المهمة
 
-- Don't edit files inside someone else's folder.
-- `node_modules` is already excluded via `.gitignore` — no need to upload it.
+| الأمر                   | الاستخدام                               |
+| ----------------------- | --------------------------------------- |
+| `git clone <url>`       | تنزيل الريبو أول مرة على جهازك          |
+| `git pull`              | سحب آخر تحديثات من GitHub لجهازك        |
+| `git add .`             | تجهيز كل التعديلات للرفع                |
+| `git commit -m "رسالة"` | حفظ التعديلات بعنوان واضح               |
+| `git push`              | رفع التعديلات على GitHub                |
+| `git status`            | تعرف إيه اللي اتغيّر أو لسه محتاج يترفع |
+| `cd folder-name`        | تدخل فولدر معين                         |
+| `cd ..`                 | ترجع فولدر واحد للورا                   |
+| `pwd`                   | تعرف إنت فين بالظبط دلوقتي              |
+| `ls`                    | تشوف محتويات الفولدر الحالي             |
+
+---
+
+## 💬 النقاش على الحلول
+
+استخدم تبويب **Discussions** بدل جروبات الشات التانية:
+
+1. افتح Discussion جديدة
+2. اربطها بالملف أو الفولدر اللي بتتكلم عنه (بعمل link ليه)
+3. اعمل tag للشخص اللي بترد عليه
+
+كده النقاش بيفضل مربوط بالكود نفسه، مش متفرق بين شات وشات.
+
+---
+
+## 🛠️ مشاكل متوقعة وحلولها
+
+### 1) `! [rejected] main -> main (fetch first)` عند الـ push
+
+**السبب:** حد تاني عمل push بعدك وإنت نسيت تعمل `pull` قبل ما تحاول ترفع.
+
+**الحل:**
+
+```bash
+git pull
+git push
+```
+
+---
+
+### 2) `hint: You have divergent branches and need to specify how to reconcile them`
+
+**السبب:** ده بيظهر أول مرة بس، لأن Git محتاج يعرف طريقة الدمج المفضلة عندك.
+
+**الحل (مرة واحدة بس):**
+
+```bash
+git config --global pull.rebase false
+git pull
+```
+
+بعد الـ `pull`، ممكن يفتحلك محرر نصوص (Nano أو Vim) عايز منك commit message للـ merge:
+
+- **الرسالة الافتراضية كويسة زي ما هي، مش لازم تعدلها.**
+- لو Nano: دوس `Ctrl + X` ثم `Y` ثم `Enter`
+- لو Vim: دوس `Esc` ثم اكتب `:wq` ثم `Enter`
+
+بعد كده كمّل `git push` عادي.
+
+---
+
+## ✅ قواعد عامة
+
+- ✏️ متعديلش أو تحذفش أي ملف جوه فولدر شخص تاني.
+- 📁 اسم فولدرك لازم يفضل ثابت زي ما هو في كل السيشنز.
+- 🔁 اعمل `git pull` قبل أي `git push` من غير استثناء.
+- 💬 أي نقاش على حل، يبقى في تبويب Discussions مش في جروب الشات.
+- 🚫 من غير ما تتأكد إن `.gitignore` شغال، متضيفش فولدر `node_modules` يدويًا.
+
+---
+
+<div align="center">
+
+**لو واجهتك مشكلة مش موجودة هنا، افتح Discussion جديدة واوصفها بالتفصيل مع screenshot، أو ابعتها على جروب الواتساب بتاعنا.**
+
+</div>
