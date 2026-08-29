@@ -40,7 +40,7 @@
 ```bash
 git pull
 git add .
-git commit -m "TECH-D12 - اسمك"
+git commit -m "D12 - اسمك"
 git push
 ```
 
