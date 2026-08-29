@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📘 Technical Session 11
+# 📘 Technical Session 12
 
 **الفولدر:** `TECH-D12`
 
