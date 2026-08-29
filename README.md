@@ -1,5 +1,5 @@
 <div align= "center">
-# 📚 DEPI React — Technical Assignments
+<h1> 📚 DEPI React — Technical Assignments </h1>
 </div>
 مساحة مشتركة نرفع فيها كلنا حلول تاسكات كل سيشن، عشان نقدر نشوف حل بعض ونقارن طرق التفكير المختلفة لنفس المسألة.
 
