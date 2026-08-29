@@ -1,8 +1,8 @@
 
 var strr = prompt("Enter a string:");
-var choice = confirm("Do you want to consider the case?");
+var Ahmed = confirm("Do you want to consider the case?");
 
-if (!choice) {
+if (!Ahmed) {
   strr = strr.toLowerCase();
 }
 
