@@ -1,8 +1,8 @@
 <div align="center">
 
-# 📘 Technical Session 15
+# 📘 Technical Session 14
 
-**الفولدر:** `TECH-D15`
+**الفولدر:** `TECH-D14`
 
 </div>
 
@@ -12,54 +12,55 @@
 
 - The DOM (Document Object Model) — التعامل مع عناصر الصفحة عن طريق `document`
 - إنشاء عناصر جديدة:
-  - `document.createElement()`
-  - `appendChild()`
+    - `document.createElement()`
+    - `appendChild()`
 - التعامل مع محتوى العنصر:
-  - `innerHTML`
+    - `innerHTML`
 - التحكم في الـ Style باستخدام JavaScript:
-  - `element.style.property`
+    - `element.style.property`
 - طرق الوصول للعناصر:
-  - `getElementById()`
-  - `getElementsByTagName()`
-  - `querySelector()`
-  - `querySelectorAll()`
-  - استخدام Selectors مثل `tag`, `#id`, `.class`
+    - `getElementById()`
+    - `getElementsByTagName()`
+    - `querySelector()`
+    - `querySelectorAll()`
+    - استخدام Selectors مثل `tag`, `#id`, `.class`
 - Events — التعامل مع تفاعل المستخدم:
-  - `onclick`
-  - `addEventListener()`
-  - `click`
-  - `dblclick`
+    - `onclick`
+    - `addEventListener()`
+    - `click`
+    - `dblclick`
 - Event Object:
-  - `event.target`
-  - `event.target.value`
-  - `event.preventDefault()`
+    - `event.target`
+    - `event.target.value`
+    - `event.preventDefault()`
 - التعامل مع الـ Inputs:
-  - `change` event
-  - `input` event
-  - قراءة قيمة الـ input باستخدام `event.target.value`
+    - `change` event
+    - `input` event
+    - قراءة قيمة الـ input باستخدام `event.target.value`
 - إنشاء HTML بشكل Dynamic باستخدام Template Literals:
-  - ``${value}``
-  - إضافة المحتوى باستخدام `innerHTML`
+    - `${value}`
+    - إضافة المحتوى باستخدام `innerHTML`
 - Timers:
-  - `setTimeout()` — تنفيذ الكود مرة واحدة بعد وقت محدد
-  - `clearTimeout()` — إلغاء الـ timeout
-  - `setInterval()` — تنفيذ الكود بشكل متكرر كل فترة
-  - `clearInterval()` — إيقاف الـ interval
+    - `setTimeout()` — تنفيذ الكود مرة واحدة بعد وقت محدد
+    - `clearTimeout()` — إلغاء الـ timeout
+    - `setInterval()` — تنفيذ الكود بشكل متكرر كل فترة
+    - `clearInterval()` — إيقاف الـ interval
 - The BOM (Browser Object Model) — التعامل مع الـ Browser عن طريق `window`
 - `window.open()` — فتح صفحة أو نافذة جديدة
 - `window.close()` — إغلاق النافذة
 - `window.print()` — فتح نافذة الطباعة
 - `window.history` — التعامل مع History الخاص بالمتصفح:
-  - `history.back()` — الرجوع للصفحة السابقة
-  - `history.forward()` — الانتقال للصفحة التالية
+    - `history.back()` — الرجوع للصفحة السابقة
+    - `history.forward()` — الانتقال للصفحة التالية
 - `window.location` — التعامل مع عنوان الصفحة:
-  - `location.reload()` — إعادة تحميل الصفحة
+    - `location.reload()` — إعادة تحميل الصفحة
 - استخدام `window` للتعامل مع الـ Browser APIs والـ Properties الخاصة بالمتصفح.
+
 ---
 
 ## 📝 الأسينمنت بتاع السيشن
 
-عندنا التاسكات بتاعة الـ DOM موجودة في فايل السيشن `TECH-D15`.
+عندنا التاسكات بتاعة الـ DOM موجودة في فايل السيشن `TECH-D14`.
 
 ---
 
@@ -72,7 +73,7 @@
 ```bash
 git pull
 git add .
-git commit -m "Day 15 - اسمك"
+git commit -m "Day 14 - اسمك"
 git push
 ```
 
