@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head><title>Task 1.b</title></head>
+<body>
+<script>
+let number = Number(prompt("Enter the number of persons:"));
+let users = [];
+
+for (let i = 0; i < number; i++) {
+
+    let name = prompt("Enter user name:");
+
+    while (name.length <= 3 || name.length >= 10) {
+        name = prompt("Name must be more than 3 and less than 10 characters:");
+    }
+
+    let age = prompt("Enter user age:");
+
+    while (isNaN(age) || age <= 10 || age >= 60) {
+        age = prompt("Age must be greater than 10 and less than 60:");
+    }
+
+    users.push({
+        name: name,
+        age: Number(age)
+    });
+}
+
+console.log(users);
+alert("Users information entered successfully!");
+</script>
+</body>
+</html>

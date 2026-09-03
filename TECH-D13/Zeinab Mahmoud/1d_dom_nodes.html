@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task 1.d - DOM Nodes</title>
+</head>
+
+<body>
+
+<div id="main">
+
+    <div id="header">
+        <img src="dom.jpg" alt="hello">
+    </div>
+
+    <div id="navigation">
+        <ul id="nav">
+            <li><strong>Memo</strong></li>
+            <li><a href="#">Articles</a></li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<script>
+
+    document.getElementById("header").style.textAlign = "right";
+    document.getElementById("navigation").style.textAlign = "center";
+
+    let newImage = document.createElement("img");
+    newImage.src = "dom.jpg";
+    newImage.alt = "new image";
+
+    document.body.appendChild(newImage);
+
+    document.getElementById("nav").style.display = "inline-block";
+</script>
+
+</body>
+</html>
