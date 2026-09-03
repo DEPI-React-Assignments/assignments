@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <body>
+    <h2 id="welcome"></h2>
+    <p id="info"></p>
+    <script>
+      let data = new URLSearchParams(location.search);
+      let name = data.get("name");
+
+      document.getElementById("welcome").innerHTML = "Welcome " + name;
+      document.getElementById("info").innerHTML =
+        "Address: " +
+        data.get("address") +
+        "<br>" +
+        "Gender: " +
+        data.get("gender") +
+        "<br>" +
+        "Email: " +
+        data.get("email") +
+        "<br>" +
+        "Mobile: " +
+        data.get("mobile");
+    </script>
+  </body>
+</html>

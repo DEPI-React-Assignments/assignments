@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  <body>
+    <button onclick="openChild()">Open Child Window</button>
+    <script>
+      function openChild() {
+        let child = window.open("", "child", "width=400,height=300");
+        child.document.write("<h2>Child Window</h2>");
+        setTimeout(function () {
+          child.close();
+        }, 5000);
+      }
+    </script>
+  </body>
+</html>

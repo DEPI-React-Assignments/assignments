@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>DOM Clone</title>
+  </head>
+  <body>
+    <div
+      id="box"
+      onclick="cloneBox()"
+      style="
+        width: 200px;
+        height: 100px;
+        background: lightblue;
+        text-align: center;
+        padding-top: 40px;
+        box-sizing: border-box;
+      "
+    >
+      Click Me
+    </div>
+
+    <script>
+      function cloneBox() {
+        let newBox = document.getElementById("box").cloneNode(true);
+        newBox.style.backgroundColor =
+          "rgb(" +
+          Math.random() * 255 +
+          "," +
+          Math.random() * 255 +
+          "," +
+          Math.random() * 255 +
+          ")";
+        newBox.removeAttribute("id");
+        document.body.appendChild(newBox);
+      }
+    </script>
+  </body>
+</html>

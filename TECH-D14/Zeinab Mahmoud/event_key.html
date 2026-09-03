@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Event Object</title>
+  </head>
+  <body>
+    <h3>Press any key</h3>
+    <script>
+      document.onkeydown = function (event) {
+        alert(
+          "ASCII Code = " +
+            event.keyCode +
+            "\nAlt = " +
+            event.altKey +
+            "\nCtrl = " +
+            event.ctrlKey +
+            "\nShift = " +
+            event.shiftKey,
+        );
+      };
+    </script>
+  </body>
+</html>

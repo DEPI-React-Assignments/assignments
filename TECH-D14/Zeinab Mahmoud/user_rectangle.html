@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <body>
+    <script>
+      function Rectangle(width, height) {
+        this.width = width;
+        this.height = height;
+
+        this.area = function () {
+          return this.width * this.height;
+        };
+
+        this.perimeter = function () {
+          return 2 * (this.width + this.height);
+        };
+
+        this.displayInfo = function () {
+          document.write("Width = " + this.width + "<br>");
+          document.write("Height = " + this.height + "<br>");
+          document.write("Area = " + this.area() + "<br>");
+          document.write("Perimeter = " + this.perimeter());
+        };
+      }
+
+      let rect = new Rectangle(10, 5);
+      rect.displayInfo();
+    </script>
+  </body>
+</html>

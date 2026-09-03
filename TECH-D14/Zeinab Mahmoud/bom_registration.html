@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <body>
+    <h2>Registration</h2>
+    <form id="form">
+      Name: <input id="name" /> <br /><br />
+      Email: <input id="email" type="email" /> <br /><br />
+      Mobile: <input id="mobile" /> <br /><br />
+      Gender:
+      <input type="radio" name="gender" value="Male" />Male
+      <input type="radio" name="gender" value="Female" />Female<br /><br />
+      Address: <input id="address" /> <br /><br />
+      <input type="submit" value="Register" />
+    </form>
+
+    <script>
+      let timeout = setTimeout(function () {
+        alert("Timeout");
+      }, 30000);
+
+      document.getElementById("form").onsubmit = function (e) {
+        e.preventDefault();
+        clearTimeout(timeout);
+
+        let gender = document.querySelector('input[name="gender"]:checked');
+
+        let data =
+          "?name=" +
+          encodeURIComponent(document.getElementById("name").value) +
+          "&email=" +
+          encodeURIComponent(document.getElementById("email").value) +
+          "&mobile=" +
+          encodeURIComponent(document.getElementById("mobile").value) +
+          "&gender=" +
+          encodeURIComponent(gender ? gender.value : "") +
+          "&address=" +
+          encodeURIComponent(document.getElementById("address").value);
+
+        location.href = "bom_welcome.html" + data;
+      };
+    </script>
+  </body>
+</html>
