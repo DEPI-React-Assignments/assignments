@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Password</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 40px;
+            }
+
+            .password-control {
+                position: relative;
+                width: min(100%, 400px);
+            }
+
+            input {
+                box-sizing: border-box;
+                padding: 10px 45px 10px 12px;
+                width: 100%;
+            }
+
+            button {
+                background: transparent;
+                border: 0;
+                cursor: pointer;
+                font-size: 20px;
+                padding: 6px;
+                position: absolute;
+                right: 5px;
+                top: 3px;
+            }
+        </style>
+    </head>
+    <body>
+        <label for="password">Password</label>
+        <div class="password-control">
+            <input type="password" id="password" />
+            <button type="button" id="togglePassword" aria-label="Show password">
+                &#128065;
+            </button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
