@@ -45,10 +45,6 @@ TECH-D12/
 
 ```bash
 git clone https://github.com/DEPI-React-Assignments/assignments.git
-cd assignments
-cd TECH-D[xx]
-mkdir اسمك
-cd اسمك
 ```
 
 ### مع كل سيشن جديدة (الخطوات المتكررة)
