@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Document</title>
+   <style>
+    #calculator { display: inline-block; border: 3px solid #a4a2a2; padding: 10px; }
+    #input { width: 160px; height: 30px; margin-bottom: 10px; text-align: right; }
+    button { width: 50px; height: 35px; margin: 2px; font-size: 16px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h3>JavaScriptCalculator</h3>
+  <div id="calculator" >
+    <input type="text" id="input" readonly> <button onclick="Result()">=</button> <br>
+   <button onclick="input1('1')">1</button> <button onclick="input2('2')">2</button> <button onclick="input3('3')">3</button> <button onclick="add('+')">+</button><br>
+   <button onclick="input4('4')">4</button> <button onclick="input5('5')">5</button> <button onclick="input6('6')">6</button> <button onclick="subtract('-')">-</button><br>
+   <button onclick="input7('7')">7</button> <button onclick="input8('8')">8</button> <button onclick="input9('9')">9</button> <button onclick="multiply('*')">*</button><br>
+   <button onclick="clearInput()">C</button> <button onclick="input0('0')">0</button> <button onclick="dot()">.</button> <button onclick="division('/')">/</button>
+
+  </div> 
+  <script src="./script2.js"></script>
+</body>
+</html>

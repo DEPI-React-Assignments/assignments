@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+<p>
+    Here is a paragraph of text that has various alignment characteristics that can be changed dynamically.
+    Click the radio buttons below to view combinations of text style settings.
+</p>
+
+<table border="3" cellpadding="5">
+    <tr>
+        <th>Font Family</th>
+        <th>Text Align</th>
+        <th>Line Height</th>
+        <th>Letter Spacing</th>
+        <th>Text Indent</th>
+        <th>Text Transform</th>
+        <th>Text Decoration</th>
+        <th>Text Border</th>
+        <th>Border Color</th>
+    </tr>
+
+    <tr>
+        <td>
+            <input type="radio" name="fontFamily" onclick="font('Arial')"> Arial <br>
+            <input type="radio" name="fontFamily" onclick="font('Courier')"> Courier <br>
+            <input type="radio" name="fontFamily" onclick="font('Georgia')"> Georgia <br>
+            <input type="radio" name="fontFamily" onclick="font('Impact')"> Impact <br>
+            <input type="radio" name="fontFamily" onclick="font('Times New Roman')"> Times New Roman <br>
+            <input type="radio" name="fontFamily" onclick="font('Verdana')"> Verdana
+        </td>
+
+        <td>
+            <input type="radio" name="textAlign" onclick="font('left')"> Left <br>
+            <input type="radio" name="textAlign" onclick="font('center')"> Center <br>
+            <input type="radio" name="textAlign" onclick="font('right')"> Right <br>
+            <input type="radio" name="textAlign" onclick="font('justify')"> Justify
+        </td>
+
+        <td>
+            <input type="radio" name="lineHeight" onclick="font('normal')"> Normal <br>
+            <input type="radio" name="lineHeight" onclick="font('10px')"> 10px <br>
+            <input type="radio" name="lineHeight" onclick="font('15px')"> 15px <br>
+            <input type="radio" name="lineHeight" onclick="font('1.5')"> 1.5
+        </td>
+
+        <td>
+            <input type="radio" name="letterSpacing" onclick="font('0px')"> 0px <br>
+            <input type="radio" name="letterSpacing" onclick="font('-1px')"> -1px <br>
+            <input type="radio" name="letterSpacing" onclick="font('2px')"> 2px <br>
+            <input type="radio" name="letterSpacing" onclick="font('3px')"> 3px
+        </td>
+
+        <td>
+            <input type="radio" name="textIndent" onclick="font('0px')"> 0px <br>
+            <input type="radio" name="textIndent" onclick="font('5px')"> 5px <br>
+            <input type="radio" name="textIndent" onclick="font('15px')"> 15px <br>
+            <input type="radio" name="textIndent" onclick="font('25px')"> 25px
+        </td>
+
+        <td>
+            <input type="radio" name="textTransform" onclick="font('none')"> None <br>
+            <input type="radio" name="textTransform" onclick="font('capitalize')"> Capitalize <br>
+            <input type="radio" name="textTransform" onclick="font('uppercase')"> Uppercase <br>
+            <input type="radio" name="textTransform" onclick="font('lowercase')"> Lowercase
+        </td>
+
+        <td>
+            <input type="radio" name="textDecoration" onclick="font('none')"> None <br>
+            <input type="radio" name="textDecoration" onclick="font('line-through')"> Line-through <br>
+            <input type="radio" name="textDecoration" onclick="font('overline')"> Overline <br>
+            <input type="radio" name="textDecoration" onclick="font('underline')"> Underline
+        </td>
+
+        <td>
+            <input type="radio" name="borderStyle" onclick="font('none')"> None <br>
+            <input type="radio" name="borderStyle" onclick="font('dotted')"> Dotted <br>
+            <input type="radio" name="borderStyle" onclick="font('double')"> Double <br>
+            <input type="radio" name="borderStyle" onclick="font('groove')"> Groove <br>
+            <input type="radio" name="borderStyle" onclick="font('dashed')"> Dashed <br>
+            <input type="radio" name="borderStyle" onclick="font('solid')"> Solid <br>
+            <input type="radio" name="borderStyle" onclick="font('outset')"> Outset <br>
+            <input type="radio" name="borderStyle" onclick="font('ridge')"> Ridge
+        </td>
+
+        <td>
+            <input type="radio" name="borderColor" onclick="font('pink')"> Pink <br>
+            <input type="radio" name="borderColor" onclick="font('red')"> Red <br>
+            <input type="radio" name="borderColor" onclick="font('green')"> Green <br>
+            <input type="radio" name="borderColor" onclick="font('blue')"> Blue <br>
+            <input type="radio" name="borderColor" onclick="font('yellow')"> Yellow <br>
+            <input type="radio" name="borderColor" onclick="font('purple')"> Purple
+        </td>
+    </tr>
+</table>
+
+<script src="script3.js"></script>
+
+</body>
+</html>
