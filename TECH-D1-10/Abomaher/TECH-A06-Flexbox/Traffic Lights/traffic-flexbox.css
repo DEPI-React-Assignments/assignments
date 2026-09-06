@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.black-bg{
+    width: 9rem;
+    height: 22rem;
+    background-color: black;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position:relative;
+}
+
+.circle {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    transition:
+        transform 1s,
+        box-shadow 1s;
+}
+
+.green {
+    background-color: green;
+}
+
+.yellow {
+    background-color: yellow;
+}
+.red {
+    background-color: red;
+}
+
+.green:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 1.5rem 1rem rgba(0, 133, 0, 0.748);
+}
+.yellow:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 1.5rem 1rem rgba(183, 183, 0, 0.748);
+}
+.red:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 1.5rem 1rem rgba(184, 0, 0, 0.748);
+}
+
+.tail {
+    position: absolute;
+    top: 100%;
+    background-color: black;
+    height: 6rem;
+    width: 1rem;
+}

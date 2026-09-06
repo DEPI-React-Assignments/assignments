@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Table</title>
+    </head>
+    <body>
+        <h1 align="center"><font color="blue">Table</font></h1>
+        <table border="1" align="center" width="300px">
+            <thead>
+                <tr>
+                    <th width="50%" colspan="2">Website Pages</th>
+                    <th height="80px" rowspan="2">Description</th>
+                </tr>
+                <tr>
+                    <th><a href="/page2.html" target="_blank">Home</a></th>
+                    <th>
+                        <a href="https://www.google.com" target="_blank"
+                            >Search</a
+                        >
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr bgcolor="green">
+                    <td height="30px" colspan="3">
+                        <center>All the data is here</center>
+                    </td>
+                </tr>
+                <tr>
+                    <td height="150px" colspan="2" rowspan="2">
+                        <center>eos et accusamus et iusto</center>
+                    </td>
+                    <td>
+                        <center>
+                            <font color="red">eos et accusamus et iusto</font>
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+                            At vero eos et accusamus et iusto odio difnissimos
+                            ducimus qui blaanditiis
+                        </center>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br/>
+        <hr />
+        <h1>
+            <font color="blue"><center>Form</center></font>
+        </h1>
+        <form action="" method="post" align="center">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" />
+            &nbsp;
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" />
+            <br />
+            <table align="center" width="500">
+                <tr>
+                    <td rowspan="2">
+                        <label for="">Gender:</label>
+                    </td>
+                    <td rowspan="2" height="80" align="left">
+                        <label for="gender">Male</label>
+                        <input type="radio" name="gender" id="male" />
+                        <br />
+                        <label for="gender">Female</label>
+                        <input type="radio" name="gender" id="female" />
+                    </td>
+                    <td rowspan="2" align="right">
+                        <label for="color">Choose multiple colors:</label>
+                    </td>
+                    <td colspan="2">
+                        <select name="color" id="color" multiple>
+                            <option value="red">red</option>
+                            <option value="blue">blue</option>
+                            <option value="green">green</option>
+                            <option value="yellow">yellow</option>
+                            <option value="black">black</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit data" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <br />
+        <hr />
+        <h1 align="center"><font color="blue">Image Map</font></h1>
+        <center>
+            <img src="/Google.webp" alt="google" />
+        </center>
+    </body>
+</html>

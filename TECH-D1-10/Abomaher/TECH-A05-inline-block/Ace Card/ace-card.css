@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+.ace-card {
+    margin: 4rem;
+    border: 0.3rem solid red;
+    border-radius: 50px;
+    width: 25rem;
+    height: 37.5rem;
+    position: relative;
+}
+
+.letter-a {
+    height: 5rem;
+    position: absolute;
+}
+
+.letter-a:first-of-type {
+    top: 0;
+    left: 0;
+}
+
+.letter-a:last-of-type {
+    bottom: 0;
+    right: 0;
+}
+
+.spade {
+    height: 8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
