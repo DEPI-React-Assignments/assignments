@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Management</title>
+
+    <style>
+
+
+        input {
+            display: block;
+            margin: 8px 0;
+            padding: 8px;
+        }
+
+        button {
+            margin: 5px;
+            padding: 7px 12px;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 30px;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        #bookForm {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Books Management</h1>
+
+    <label>Number of Books:</label>
+    <input type="number" id="bookNumber">
+
+    <button id="startButton">Start</button>
+
+    <form id="bookForm">
+
+        <h2>Book Information</h2>
+
+        <input type="text" id="bookName" placeholder="Book Name">
+
+        <input type="number" id="bookPrice" placeholder="Book Price">
+
+        <input type="text" id="authorName" placeholder="Author Name">
+
+        <input type="email" id="authorEmail" placeholder="Author Email">
+
+        <button type="submit">Add Book</button>
+
+    </form>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Book Name</th>
+                <th>Price</th>
+                <th>Author Name</th>
+                <th>Author Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody id="booksTable">
+        </tbody>
+
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
