@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Color Range</title>
+        <style>
+            main {
+                padding: 50px;
+            }
+            section {
+                margin: 50px;
+            }
+            input {
+                margin: 0 50px;
+            }
+        </style>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <section id="colors-section">
+                <section>
+                    <label for="red">Red</label>
+                    <input type="range" id="red" min="0" max="255" />
+                </section>
+                <section>
+                    <label for="green">Green</label>
+                    <input type="range" id="green" min="0" max="255" />
+                </section>
+                <section>
+                    <label for="blue">Blue</label>
+                    <input type="range" id="blue" min="0" max="255" />
+                </section>
+            </section>
+            <article>
+                <h2>
+                    Change the 3 colors ranges above and observe my color change
+                </h2>
+            </article>
+        </main>
+    </body>
+</html>

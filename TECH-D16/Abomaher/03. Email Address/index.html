@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Email Changer</title>
+        <style>
+            main {
+                border: 2px solid black;
+                padding: 25px;
+                width: 75%;
+            }
+            
+            form>button {
+                margin-top: 20px;
+            }
+
+            .hidden{
+                display: none;
+            }
+
+            #span{
+                color: red;
+                padding: 5px 20px;
+                border-radius: 10px;
+            }
+        </style>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <main>
+            <h1 id="heading">Change Email Address</h1>
+            <form action="" id="form">
+                <input id="username" type="text" placeholder="Username" required />
+                <article  id="usrName-msg">
+                    The required username may only be a series of alphabetical
+                    characters
+                </article>
+                <br />
+                <input type="email" placeholder="Email" required />
+                <article  id="email-msg"></article>
+                    The required email address may not include any special
+                    characters other than the '@' sign.
+                </article>
+                <br />
+                <button type="submit">Change</button>
+            </form>
+            <section id="show-email" class="hidden">
+                <h2>Email after change: </h2>
+                <span id="span"></span>
+            </section>
+        </main>
+    </body>
+</html>

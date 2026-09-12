@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Progress bar</title>
+        <style>
+            body {
+                padding: 50px;
+            }
+            progress {
+                appearance: none;
+                -webkit-appearance: none;
+                border: none;
+            }
+
+            progress::-webkit-progress-bar {
+                background: linear-gradient(90deg, #f9ff9e, #ff9900);
+            }
+
+            progress::-webkit-progress-value {
+                background: green;
+                transition: width 0.3s ease;
+            }
+
+            progress::-moz-progress-bar {
+                background: green;
+            }
+        </style>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <section id="barOne">
+            <label for="progressOne">Progress</label>
+            <progress id="progressOne" max="100" value="5"></progress>
+            <span>5%</span>
+        </section>
+        <br />
+        <section>
+            <label for="progressTwo">Progress</label>
+            <progress id="barTwo" max="100" value="1"></progress>
+            <span><span id="spanTwo">1</span>%</span>
+        </section>
+    </body>
+</html>
