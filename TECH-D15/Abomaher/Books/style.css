@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 32px 16px;
+    background-color: #d8f3dcff;
+    color: #1b4332ff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: min(1100px, 100%);
+    margin: auto;
+}
+
+.panel {
+    margin-bottom: 24px;
+    padding: 24px;
+    background-color: #b7e4c7ff;
+    border: 1px solid #95d5b2ff;
+    box-shadow: 0 2px 5px #40916cff;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #40916cff;
+    font-size: 15px;
+}
+
+button {
+    padding: 9px 18px;
+    border: 1px solid #2d6a4fff;
+    border-radius: 5px;
+    background-color: #52b788ff;
+    color: white;
+    cursor: pointer;
+}
+
+#numberForm {
+    display: flex;
+    align-items: end;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+#numberForm label {
+    width: 150px;
+    margin: 0;
+}
+
+#numberForm input {
+    width: 220px;
+}
+
+.book-form {
+    margin-bottom: 20px;
+    padding: 18px;
+    background-color: #95d5b2ff;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.field {
+    margin-bottom: 12px;
+}
+
+.error {
+    min-height: 18px;
+    margin: 5px 0 0;
+    color: #2d6a4fff;
+    font-size: 13px;
+}
+
+.invalid {
+    border: 2px solid #1b4332ff;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #95d5b2ff;
+}
+
+th {
+    padding: 10px 6px;
+    background-color: #081c15ff;
+    color: white;
+    font-size: 13px;
+    text-align: left;
+}
+
+td {
+    padding: 10px 6px;
+    border-bottom: 1px solid #74c69dff;
+    font-size: 14px;
+}
+
+td input {
+    min-width: 90px;
+    padding: 5px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 6px;
+}
+
+.cancel-button {
+    background-color: #40916cff;
+}
+
+.delete-button {
+    background-color: #2d6a4fff;
+}
+
+@media (max-width: 750px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Books</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="container">
+            <section id="numberSection" class="panel">
+                <h1>Books Library</h1>
+                <form id="numberForm">
+                    <label for="booksNumber">How Many Books?</label>
+                    <input
+                        id="booksNumber"
+                        type="number"
+                        min="1"
+                        required
+                        placeholder="Enter Books No."
+                    />
+                    <button type="submit">OK</button>
+                    <p id="numberError" class="error"></p>
+                </form>
+            </section>
+
+            <section id="booksSection" class="panel hidden">
+                <h2>Enter Books Information</h2>
+                <form id="booksForm"></form>
+            </section>
+
+            <section id="tableSection" class="panel hidden">
+                <h2>Books List</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Publish Date</th>
+                            <th>Price</th>
+                            <th>Author Name</th>
+                            <th>Author E-mail</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="booksTableBody"></tbody>
+                </table>
+            </section>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
