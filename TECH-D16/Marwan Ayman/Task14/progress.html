@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Progress Bar</title>
+
+    <style>
+        .bar {
+            width: 200px;
+            height: 20px;
+            background: orange;
+            position: relative;
+        }
+
+        .fill {
+            width: 0%;
+            height: 20px;
+            background: green;
+        }
+
+        .fill::after {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 20px;
+            background: green;
+            cursor: ew-resize;
+        }
+    </style>
+</head>
+
+<body>
+
+    <label>progress</label>
+
+<span style="display: inline-flex; align-items: center;">
+    <div class="bar" id="bar">
+        <div class="fill" id="fill"></div>
+    </div>
+
+    <span id="percent">0%</span>
+</span>
+
+    <script>
+        var bar = document.getElementById("bar");
+        var fill = document.getElementById("fill");
+        var percent = document.getElementById("percent");
+
+        var move = false;
+
+        fill.addEventListener("mousedown", () => {
+            move = true;
+        });
+
+        bar.addEventListener("mousedown", () => {
+            move = true;
+        });
+
+        window.addEventListener("mousemove", (e) => {
+
+            if (move) {
+
+                var position = e.clientX - bar.offsetLeft;
+
+                var value = Math.round(
+                    position / bar.offsetWidth * 100
+                );
+
+                if (value < 0) {
+                    value = 0;
+                }
+
+                if (value > 100) {
+                    value = 100;
+                }
+
+                fill.style.width = value + "%";
+                percent.textContent = value + "%";
+            }
+        });
+
+        window.addEventListener("mouseup", () => {
+            move = false;
+        });
+    </script>
+
+</body>
+</html>
