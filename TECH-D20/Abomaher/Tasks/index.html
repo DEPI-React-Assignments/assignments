@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#101b1a" />
+        <title>Tasks</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="task-board">
+            <form class="task-form" id="task-form">
+                <label class="visually-hidden" for="task-input">New task</label>
+                <input
+                    id="task-input"
+                    name="task"
+                    type="text"
+                    placeholder="What needs doing?"
+                    autocomplete="off"
+                    maxlength="160"
+                    required
+                />
+                <button class="add-button" type="submit">
+                    <span aria-hidden="true">+</span>
+                    <span class="visually-hidden">Add task</span>
+                </button>
+            </form>
+
+            <ul class="task-list" id="task-list" aria-label="Tasks"></ul>
+        </main>
+
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
