@@ -1,0 +1,153 @@
+:root {
+    color-scheme: light;
+    font-family: Arial, Helvetica, sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --navbar-color: #565987;
+    --link-color: #a7dce5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 32px;
+    background: #fff;
+}
+
+.site-header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    min-height: 112px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    background-color: var(--navbar-color);
+}
+
+.brand {
+    justify-self: start;
+    color: #fff;
+    font-size: 64px;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.navigation-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation-list a,
+.profile-name {
+    color: var(--link-color);
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.navigation-list a:hover,
+.profile:hover .profile-name {
+    color: #fff;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    gap: 16px;
+    text-decoration: none;
+}
+
+.profile-image {
+    display: block;
+    width: 64px;
+    height: 64px;
+    border: 2px solid rgb(255 255 255 / 25%);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 760px) {
+    body {
+        padding: 20px;
+    }
+
+    .site-header {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 20px;
+        padding: 20px 24px;
+    }
+
+    .brand {
+        font-size: 52px;
+    }
+
+    .primary-navigation {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        justify-self: center;
+    }
+
+    .navigation-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 28px;
+    }
+
+    .profile-name {
+        font-size: 16px;
+    }
+
+    .profile-image {
+        width: 52px;
+        height: 52px;
+    }
+}
+
+@media (max-width: 440px) {
+    body {
+        padding: 12px;
+    }
+
+    .site-header {
+        padding: 18px 16px;
+    }
+
+    .brand {
+        font-size: 44px;
+    }
+
+    .profile {
+        gap: 8px;
+    }
+
+    .profile-name {
+        font-size: 14px;
+    }
+
+    .profile-image {
+        width: 44px;
+        height: 44px;
+    }
+
+    .navigation-list {
+        gap: 12px 20px;
+    }
+
+    .navigation-list a {
+        font-size: 17px;
+    }
+}

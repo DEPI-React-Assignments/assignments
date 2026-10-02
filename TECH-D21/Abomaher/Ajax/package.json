@@ -1,0 +1,9 @@
+{
+    "name": "tech-d21-ajax-users",
+    "version": "1.0.0",
+    "private": true,
+    "description": "jQuery AJAX user tabs assignment",
+    "dependencies": {
+        "jquery": "^3.7.1"
+    }
+}

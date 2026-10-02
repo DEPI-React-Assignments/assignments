@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>AJAX</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./node_modules/jquery/dist/jquery.min.js" defer></script>
+        <script src="./script.js" defer></script>
+    </head>
+    <body>
+        <main class="page-shell">
+            <section class="browser" aria-label="User posts">
+                <div
+                    id="user-tabs"
+                    class="user-tabs"
+                    role="tablist"
+                    aria-label="Users"
+                    aria-orientation="horizontal"
+                >
+                    <span class="tabs-message" role="status"
+                        >Loading users…</span
+                    >
+                </div>
+
+                <section
+                    id="posts-panel"
+                    class="posts-panel"
+                    role="tabpanel"
+                    tabindex="0"
+                    aria-live="polite"
+                ></section>
+            </section>
+        </main>
+    </body>
+</html>

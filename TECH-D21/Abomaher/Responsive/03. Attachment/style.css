@@ -1,0 +1,284 @@
+:root {
+    color-scheme: light;
+    font-family: Arial, Helvetica, sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    --bar-background: #eeeeee;
+    --field-background: #ffffff;
+    --outline: #a5a5a5;
+    --icon-blue: #4aa3f5;
+    --icon-blue-dark: #3488e4;
+    --text-color: #151515;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    background: var(--bar-background);
+    color: var(--text-color);
+}
+
+button,
+input {
+    font: inherit;
+}
+
+.page {
+    display: grid;
+    min-height: 100vh;
+    min-height: 100svh;
+    align-items: center;
+    padding: 16px 10px;
+}
+
+.message-bar {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr) 68px;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+    min-height: 150px;
+    padding: 14px;
+    border: 2px solid var(--outline);
+    border-radius: 21px;
+    background: #f0f0f0;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 8%);
+}
+
+.attachment-tools {
+    display: grid;
+    grid-template-columns: repeat(4, 40px);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tool-button,
+.emoji-button,
+.like-button {
+    display: grid;
+    flex: none;
+    place-items: center;
+    padding: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.tool-button {
+    width: 40px;
+    height: 44px;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--icon-blue);
+}
+
+.tool-button svg {
+    width: 31px;
+    height: 31px;
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2.2;
+}
+
+.tool-button.add-button {
+    width: 40px;
+    height: 40px;
+    background: var(--icon-blue);
+    color: #ffffff;
+}
+
+.add-button svg {
+    width: 27px;
+    height: 27px;
+    stroke-width: 2.6;
+}
+
+.upload-button svg {
+    fill: currentColor;
+    stroke-width: 1.5;
+}
+
+.upload-button svg path {
+    fill: none;
+}
+
+.message-field {
+    display: flex;
+    min-width: 0;
+    height: 80px;
+    align-items: center;
+    gap: 12px;
+    padding: 0 14px 0 17px;
+    border-radius: 999px;
+    background: var(--field-background);
+}
+
+.message-field input {
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #333333;
+    font-size: 20px;
+}
+
+.message-field input::placeholder {
+    color: #737373;
+    opacity: 1;
+}
+
+.emoji-button {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: transparent;
+    color: #101010;
+}
+
+.emoji-button svg {
+    width: 43px;
+    height: 43px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+}
+
+.emoji-button .emoji-eye {
+    fill: currentColor;
+    stroke: none;
+}
+
+.like-button {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: #4d87f5;
+    color: #ffffff;
+    transition:
+        background-color 150ms ease,
+        transform 150ms ease;
+}
+
+.like-button svg {
+    width: 37px;
+    height: 37px;
+    fill: currentColor;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.8;
+}
+
+.tool-button:hover,
+.emoji-button:hover {
+    color: var(--icon-blue-dark);
+}
+
+.add-button:hover,
+.like-button:hover {
+    background: var(--icon-blue-dark);
+    color: #ffffff;
+}
+
+.like-button:hover {
+    transform: scale(1.04);
+}
+
+button:focus-visible,
+.message-field:focus-within {
+    outline: 3px solid rgb(52 136 228 / 55%);
+    outline-offset: 3px;
+}
+
+@media (max-width: 760px) {
+    .message-bar {
+        grid-template-areas:
+            "tools like"
+            "field field";
+        grid-template-columns: minmax(0, 1fr) 54px;
+        gap: 14px 12px;
+        min-height: 0;
+        padding: 14px;
+    }
+
+    .attachment-tools {
+        grid-area: tools;
+        grid-template-columns: repeat(4, 38px);
+        justify-content: start;
+        gap: clamp(8px, 4vw, 22px);
+    }
+
+    .message-field {
+        grid-area: field;
+        height: 64px;
+    }
+
+    .message-field input {
+        font-size: 18px;
+    }
+
+    .like-button {
+        grid-area: like;
+        justify-self: end;
+        width: 52px;
+        height: 52px;
+    }
+}
+
+@media (max-width: 380px) {
+    .message-bar {
+        padding: 12px;
+    }
+
+    .attachment-tools {
+        grid-template-columns: repeat(4, 34px);
+        gap: 8px;
+    }
+
+    .tool-button {
+        width: 34px;
+        height: 38px;
+    }
+
+    .tool-button.add-button {
+        width: 34px;
+        height: 34px;
+    }
+
+    .tool-button svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .message-field {
+        height: 58px;
+        padding-right: 10px;
+        padding-left: 14px;
+    }
+
+    .message-field input {
+        font-size: 16px;
+    }
+
+    .emoji-button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .emoji-button svg {
+        width: 37px;
+        height: 37px;
+    }
+}
