@@ -1,0 +1,107 @@
+:root {
+  /* Layout Colors */
+  --color-navbar: #bdf2d5;
+  --color-sidebar: #74faf8;
+  --color-main: #a0f8f8;
+  --color-content-1: #9bf5b8;
+  --color-content-2: #a3fac5;
+  --color-content-3: #96ffa3;
+  --color-footer: #54d89a;
+
+  /* Background & Surfaces */
+  --color-bg-container: #f7f7f7;
+  --color-bg-body: #ffffff;
+
+  /* Typography */
+  --color-text-primary: #1a2e26;
+  --color-text-muted: #4a6358;
+}
+body {
+  margin: 0;
+  background-color: var(--color-bg-body);
+  color: var(--color-text-primary);
+  font-family: Arial;
+}
+
+.cont {
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  gap: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.nav {
+  background-color: var(--color-navbar);
+  margin-bottom: 20px;
+}
+
+.SideBar {
+  background-color: var(--color-sidebar);
+}
+
+.main {
+  background-color: var(--color-main);
+}
+
+.Content1 {
+  background-color: var(--color-content-1);
+}
+
+.Content2 {
+  background-color: var(--color-content-2);
+}
+
+.Content3 {
+  background-color: var(--color-content-3);
+}
+
+.Footer {
+  background-color: var(--color-footer);
+}
+
+.cont > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+}
+
+@media (min-width: 426px) {
+  .cont {
+    .nav {
+      grid-area: nav;
+    }
+    .SideBar {
+      grid-area: SideBar;
+    }
+    .main {
+      grid-area: main;
+    }
+    .Content1 {
+      grid-area: Content1;
+    }
+    .Content2 {
+      grid-area: Content2;
+    }
+    .Content3 {
+      grid-area: Content3;
+    }
+    .Footer {
+      grid-area: footer;
+    }
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    grid-template-rows:
+      60px
+      150px
+      120px
+      70px;
+
+    grid-template-areas:
+      "nav nav nav nav"
+      "SideBar main main main"
+      "SideBar Content1 Content2 Content3"
+      "SideBar footer footer footer";
+  }
+}

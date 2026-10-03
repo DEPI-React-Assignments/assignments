@@ -1,0 +1,31 @@
+.SideBar {
+  background-color: #eb2f7c;
+}
+.nav {
+  background-color: #f07ab8;
+}
+.Content1 {
+  background-color: #e95897;
+}
+.Content2 {
+  background-color: #d63d9a;
+}
+.Content3 {
+  background-color: #e84597;
+}
+.Footer {
+  background-color: #a62086;
+}
+.cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 20px 1fr 100px;
+  gap: 5px;
+  height: 500px;
+}
+.nav {
+  grid-column: 1/5;
+}
+.Footer {
+  grid-column: 1/5;
+}
