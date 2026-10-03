@@ -1,0 +1,106 @@
+:root {
+    /* Layout Colors */
+    --color-navbar: #bdf2d5;
+    --color-sidebar: #74faf8;
+    --color-main: #a0f8f8;
+    --color-content-1: #9bf5b8;
+    --color-content-2: #a3fac5;
+    --color-content-3: #96ffa3;
+    --color-footer: #54d89a;
+
+    /* Background & Surfaces */
+    --color-bg-container: #f7f7f7;
+    --color-bg-body: #ffffff;
+
+    /* Typography */
+    --color-text-primary: #1a2e26;
+    --color-text-muted: #4a6358;
+}
+
+* {
+    padding: 0;
+    border-radius: 0.5rem;
+}
+
+.bar {
+    width: 100%;
+    height: 1.5rem;
+}
+
+body {
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    gap: 0.1rem;
+}
+
+.navBar {
+    background-color: var(--color-navbar);
+    width: auto;
+}
+.main {
+    height: 12rem;
+    background-color: var(--color-main);
+}
+
+.content {
+    height: 5rem;
+}
+
+.sideBar {
+    background-color: var(--color-sidebar);
+}
+
+.contentOne {
+    background-color: var(--color-content-1);
+}
+.contentTwo {
+    background-color: var(--color-content-2);
+}
+.contentThree {
+    background-color: var(--color-content-3);
+}
+
+.footer {
+    background-color: var(--color-footer);
+    width: auto;
+    height: 3rem;
+}
+
+@media (min-width: 426px) {
+    .container {
+        gap: 0.5rem;
+        grid-template-areas:
+            "navBar navBar navBar navBar"
+            "sideBar main main main"
+            "sideBar contentOne contentTwo contentThree"
+            "sideBar footer footer footer";
+    }
+    .navBar {
+        grid-area: navBar;
+    }
+    .main {
+        grid-area: main;
+    }
+    .sideBar {
+        grid-area: sideBar;
+        height: initial;
+    }
+    .contentOne {
+        grid-area: contentOne;
+    }
+    .contentTwo {
+        grid-area: contentTwo;
+    }
+    .contentThree {
+        grid-area: contentThree;
+    }
+    .footer {
+        grid-area: footer;
+    }
+}
