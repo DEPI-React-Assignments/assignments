@@ -72,7 +72,7 @@ body {
     height: 3rem;
 }
 
-@media (min-width: 426px) {
+@media (min-width: 576px) {
     .container {
         gap: 0.5rem;
         grid-template-areas:
