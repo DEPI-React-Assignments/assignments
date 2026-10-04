@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e5e5e5;
+
+    min-height: 100vh;
+}
+
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 30px;
+
+    display: flex;
+    gap: 20px;
+
+    background-color: #ddd;
+}
+
+
+/* Left Side */
+
+.left {
+    width: 30%;
+
+    padding: 40px;
+
+    background-color: #6557f5;
+    color: white;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.left h1 {
+    margin: 0;
+
+    font-size: 50px;
+}
+
+.left h2 {
+    margin: 5px 0;
+
+    font-size: 20px;
+}
+
+.left p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.left span {
+    margin-top: auto;
+
+    font-size: 12px;
+}
+
+
+/* Right Side */
+
+.right {
+    width: 70%;
+
+    padding: 40px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.inputs {
+    display: flex;
+    gap: 30px;
+}
+
+.input-box {
+    width: 50%;
+}
+
+
+label {
+    display: block;
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+}
+
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 5px;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+
+input:focus,
+textarea:focus {
+    border-color: #6557f5;
+}
+
+
+.comments {
+    margin-top: 25px;
+}
+
+
+textarea {
+    height: 180px;
+
+    resize: none;
+}
+
+
+button {
+    width: 100%;
+
+    margin-top: 25px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #6557f5;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #5144df;
+}

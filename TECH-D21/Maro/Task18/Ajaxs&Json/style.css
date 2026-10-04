@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+#users {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #34495e;
+}
+
+#users button {
+    border: 1px solid #777;
+    background-color: #95b9c9;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#users button:hover {
+    background-color: #e76f8a;
+}
+
+#posts {
+    border: 1px solid #ddd;
+    min-height: 150px;
+    padding: 15px;
+}
+
+#postsList {
+    margin: 0;
+}
+
+#postsList li {
+    margin-bottom: 8px;
+}
