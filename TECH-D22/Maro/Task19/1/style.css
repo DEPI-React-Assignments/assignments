@@ -1,0 +1,42 @@
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 60px 300px 70px;
+  gap: 5px;
+}
+
+.navbar {
+  background: hotpink;
+  text-align: center;
+  grid-column: 1 / 5;
+}
+
+.sidebar {
+  background: deeppink;
+  text-align: center;
+  grid-column: 1 / 2;
+}
+
+.content1 {
+  background: palevioletred;
+  text-align: center;
+  grid-column: 2 / 3;
+}
+
+.content2 {
+  background: palevioletred;
+  text-align: center;
+  grid-column: 3 / 4;
+}
+
+.content3 {
+  background: palevioletred;
+  text-align: center;
+  grid-column: 4 / 5;
+}
+
+.footer {
+  background: purple;
+  text-align: center;
+  grid-column: 1 / 5;
+}
