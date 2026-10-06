@@ -1,0 +1,63 @@
+/* Metropolis */
+@font-face {
+    font-family: "Metropolis";
+    src: url("./assets/fonts/metropolis/Metropolis-Regular.otf")
+        format("opentype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("./assets/fonts/metropolis/Metropolis-RegularItalic.otf")
+        format("opentype");
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("./assets/fonts/metropolis/Metropolis-Medium.otf")
+        format("opentype");
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("./assets/fonts/metropolis/Metropolis-MediumItalic.otf")
+        format("opentype");
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("./assets/fonts/metropolis/Metropolis-Bold.otf") format("opentype");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("./assets/fonts/metropolis/Metropolis-Black.otf")
+        format("opentype");
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+}
+
+/* Roboto */
+@font-face {
+    font-family: "Roboto";
+    src: url("https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2")
+        format("woff2");
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+}
