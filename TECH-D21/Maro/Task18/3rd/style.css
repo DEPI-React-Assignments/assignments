@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    background-color: #e5e5e5;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/* Message Box */
+
+.message-box {
+    width: 75%;
+
+    margin: 50px auto;
+
+    padding: 10px;
+
+    background-color: white;
+
+    border: 1px solid #aaa;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* Left Icons */
+
+.icons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.icons i {
+    color: #1689e8;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+/* Input */
+
+.message-box input {
+    flex: 1;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 12px;
+}
+
+.message-box input::placeholder {
+    color: #777;
+}
+
+
+/* Right Icons */
+
+.right-icons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.right-icons > i {
+    color: #555;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+
+/* Like Button */
+
+.right-icons button {
+    width: 28px;
+    height: 28px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background-color: #1689e8;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.right-icons button i {
+    font-size: 14px;
+}
